@@ -1,0 +1,55 @@
+[
+  {
+    "model": "JailuApp.UserGroup",
+    "pk": -1,
+    "fields": {
+      "name": "Super Administrator"
+    }
+  }
+  ,{
+    "model": "JailuApp.UserGroup",
+    "pk": -2,
+    "fields": {
+      "name": "Anonymous"
+    }
+  }
+  ,{
+    "model": "JailuApp.UserGroup",
+    "pk": 1,
+    "fields": {
+      "name": "Employee"
+    }
+  }
+
+
+  ,{
+    "model": "JailuApp.UserAccount",
+    "pk": "1",
+    "fields": {
+      "full_name": "NFT Developer",
+      "user_name": "root",
+      "password": "37e4392dad1ad3d86680a8c6b06ede92",
+      "user_group_id": -1,
+      "primary_email": "nakisa.james@nftconsult.com",
+      "entered_by": "1",
+      "entry_date": "2020-12-18 14:18:44.273756",
+      "modified_by": "1",
+      "last_modified": "2020-12-18 14:18:44.273756"
+    }
+  }
+  ,{
+    "model": "JailuApp.UserSetting",
+    "pk": "1",
+    "fields": {
+      "user_id": "1",
+      "name": "tour_status",
+      "value": "Pending",
+      "entered_by": "1",
+      "entry_date": "2020-12-18 14:18:44.273756",
+      "modified_by": "1",
+      "last_modified": "2020-12-18 14:18:44.273756"
+    }
+  }
+
+
+]

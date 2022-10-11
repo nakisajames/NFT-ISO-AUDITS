@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ew-language date="2021/9/15" version="1.0" id="en" name="English" desc="English" author="James Nakisa.">
+  <!--
+	*** Important Notes:
+	1. Language ID should follow: https://developers.google.com/recaptcha/docs/language,
+	2. Locale settings are placed in a separate locale files under the "locales" folder,
+	3. Locale files must be named with language ID of language file (and converted to lowercase), e.g. en.json,
+	4. Locale files are ALWAYS used, regardless of whether the project is single language or multiple language.
+-->
+  <global>
+    <phrase id="btn_add" caption="Save" />
+    <phrase id="btn_save" caption="Save and Apply" />
+    <phrase id="btn_cancel" caption="Cancel" />
+    <phrase id="btn_close" caption="Close" />
+    <phrase id="link_add" caption="Add" />
+    <phrase id="link_edit" caption="Edit" />
+    <phrase id="link_view" caption="View" />
+    <phrase id="link_delete" caption="Delete" />
+    <phrase id="link_view" caption="View" />
+    <phrase id="link_ex_filter" caption="Search" />
+    <phrase id="link_export_excel" caption="Excel" />
+    <phrase id="link_export_pdf" caption="Pdf" />
+    <phrase id="link_edit_permissions" caption="Set Permissions" />
+    <phrase id="please_select" caption="Please Select" />
+    <phrase id="site_title" caption="NFT ISO AUDITS" />
+    <phrase id="pagination_first" caption="First" />
+    <phrase id="pagination_last" caption="Last" />
+    <phrase id="permission_denied" caption="You do not have permission to perform this action OR Your session has expired" />
+    <phrase id="permission_admin_only" caption="Only Super Administrators are allowed to do this" />
+    <phrase id="site_footer" caption=".Designed By NFT CONSULT Limited. All rights reserved." />
+    <phrase id="site_sidebar_text" caption="NFT ISO AUDITS" />
+
+  </global>
+
+  <table_object>
+    <table id="user_group" caption="User Group">
+        <field id="id" caption="ID" />
+        <field id="name" caption="Group Name" />
+    </table>
+    <table id="security_action" caption="System Actions">
+        <field id="user_name" caption="Username" />
+        <field id="password" caption="Password" />
+    </table>
+    <table id="user_account" caption="User Account">
+        <field id="id" caption="ID" />
+        <field id="user_photo" caption="Logo" />
+        <field id="employee_number" caption="Employee Number" />
+        <field id="full_name" caption="Full Name" />
+        <field id="primary_email" caption="Primary Email" />
+        <field id="secondary_email" caption="Secondary Email" />
+        <field id="primary_phone" caption="Primary Phone" />
+        <field id="secondary_phone" caption="Secondary Phone" />
+        <field id="physical_address" caption="Physical Address" />
+        <field id="user_group" caption="User Group" />
+        <field id="user_name" caption="User Name" />
+        <field id="password" caption="Password" />
+        <field id="status" caption="Status" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+
+    <table id="system_log" caption="System Log">
+        <field id="id" caption="ID" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="table_name" caption="Table Name" />
+        <field id="record_id" caption="Record ID" />
+        <field id="operation_type" caption="Operation Type" />
+        <field id="operation_summary" caption="Operation Summary" />
+        <field id="full_description" caption="Full Description" />
+        <field id="user_id" caption="User Account" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+    <table id="country" caption="Country">
+        <field id="id" caption="ID" />
+        <field id="name" caption="Name" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+    <table id="department_type" caption="Department Type">
+        <field id="id" caption="ID" />
+        <field id="name" caption="Name" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+    <table id="department" caption="Department">
+        <field id="id" caption="ID" />
+        <field id="country" caption="Country" />
+        <field id="department_type" caption="Type" />
+        <field id="link_supervisor" caption="Supervisors" />
+        <field id="link_employee" caption="Employees" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+    <table id="department_supervisor" caption="Department Supervisor">
+        <field id="id" caption="ID" />
+        <field id="department" caption="Department" />
+        <field id="user" caption="User" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+    <table id="department_employee" caption="Department Employee">
+        <field id="id" caption="ID" />
+        <field id="department" caption="Department" />
+        <field id="user" caption="User" />
+        <field id="entry_date" caption="Entry Date" />
+        <field id="entered_by" caption="Entered By" />
+        <field id="last_modified" caption="Last Modified" />
+        <field id="modified_by" caption="Modified By" />
+    </table>
+
+
+    <table id="tour_guide" caption="tour_guide">
+        <field id="li_mi_main_value_list" caption="Manage all &lt;strong&gt;material settings&lt;/strong&gt; including Materials, setting prices on glass and other materials, Material Groups, Measurement Units" />
+        <field id="li_mi_boq_value_list" caption="Manage all &lt;strong&gt;BOQ configurations&lt;/strong&gt; including Products, Product Groups, Product Section formulas" />
+        <field id="li_mi_qt_quotation" caption="Manage all &lt;strong&gt;Generated Quotations&lt;/strong&gt; including editing existing ones, view and download generated documents, Revise existing quotations" />
+        <field id="li_mi_qt_quotation_new" caption="Create &lt;strong&gt;New Quotations&lt;/strong&gt; this always generates and consumes a new quotation number" />
+
+    </table>
+
+
+  </table_object>
+  <menu>
+      <phrase id="mi_user_group" caption="User Groups" />
+      <phrase id="mi_user_account" caption="User Accounts" />
+      <phrase id="mi_system_log" caption="System Logs" />
+      <phrase id="mi_country" caption="Countries" />
+      <phrase id="mi_department" caption="Departments" />
+      <phrase id="mi_department_type" caption="Department Types" />
+      <phrase id="mi_security_value_list" caption="Security Settings" />
+  </menu>
+</ew-language>

@@ -1,0 +1,93 @@
+.ew-required {
+    color:
+    #dc3545;
+    margin-left: .5em;
+    font-size: 50%;
+    vertical-align: super;
+}
+.form-control {
+    width:auto;
+}
+
+.app-header__logo .logo-src {
+	background: url(/static/images/header_logo.png) 50% 50% no-repeat;
+	height: 17px;
+	width: 68px;
+}
+
+/*made sidebar text hide on sidebar collapse*/
+.header-mobile-open .app-sidebar .custom-logo-text {
+    display: none;
+}
+
+/*diagonal strikethrough*/
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+/*make content never exceed 100% width with navbar adjustment*/
+.app-main .app-main__outer {
+    max-width: 100%;
+    max-width: -moz-available;
+    max-width: -webkit-fill-available;
+}
+.app-inner-layout__content.pt-1 {
+    max-width: 100%;
+    max-width: -moz-available;
+    max-width: -webkit-fill-available;
+}
+.pr-readonly-value{
+    background-color: #cacaca !important;
+}
+.pr-readonly-value2{
+    background-color: white !important;
+}
+
+/*make intor.js tour more transparent*/
+.introjs-helperLayer {
+    background-color: transparent !important;
+    border: solid yellow !important;
+}
+/*make overlay div more transparent*/
+.introjs-overlay {
+    background: -moz-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.4) 100%);
+    background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.1)),color-stop(100%,rgba(0,0,0,0.4)));
+    background: -webkit-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.4) 100%);
+    background: -o-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.4) 100%);
+    background: -ms-radial-gradient(center,ellipse farthest-corner,rgba(0,0,0,0.1) 0,rgba(0,0,0,0.4) 100%);
+}
+
+/*remove redundant vertical scroll bar in chrome on responsive tables*/
+.table-responsive > .table-bordered {
+    border: inherit;
+}
+
+/*Jquery-Autocomplete*/
+.autocomplete-suggestions { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid #999; background: #FFF; cursor: default; overflow: auto; -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64); }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-no-suggestion { padding: 2px 5px;}
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: bold; color: #000; }
+.autocomplete-group { padding: 2px 5px; font-weight: bold; font-size: 16px; color: #000; display: block; border-bottom: 1px solid #000; }
+
+/*my activity styles for mobile*/
+/* Smartphones ----------- */
+#my_act_project_list_area { column-count: 2;column-gap: 1.25rem; }
+@media only screen and (max-width: 760px) {
+  #my_act_project_list_area { column-count: 1;column-gap: 1.25rem; }
+}

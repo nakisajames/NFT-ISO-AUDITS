@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19a984b6-ef59-4e1c-85b7-a7b364cc0f42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nft_iso_audit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/bcs_score_card.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/bcs_score_card_objective.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/bcs_sub_wigs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/bcs_wigs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/bcs_module/country_score_card.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/global_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/classes/global_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_activity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_history.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_project_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/my_task_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_project_cron_jobs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_project_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_tag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_task_document.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/pjt_tasks_cron_jobs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/ticket_resolution_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/classes/pjt_module/timesheet_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/fixtures/01_initial_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/fixtures/01_initial_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/lang/english.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/lang/english.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0002_bcssubwigs_bcswigs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0003_country_department.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0004_auto_20220105_0814.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0005_bcsscorecard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0006_bcsscorecardobjective.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0007_auto_20220111_0905.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0008_auto_20220113_0909.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0009_auto_20220118_1139.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0010_departmentsupervisor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0011_departmentemployee.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0012_pjtclient_pjtproject.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0013_auto_20220131_1038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0014_remove_pjtclient_department_ids.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0015_pjtprojectdocument.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0016_pjttask.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0017_auto_20220203_1102.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0018_pjttaskdocument.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0019_pjtnotification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0020_remove_pjtnotification_to_user_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/migrations/0021_useraccount_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JailuApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/JailuApp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_jailuapp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_jailuapp/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/Service Delivery Automation..msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/google_maps_api_offline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/marker_clusterer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List 03022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List 03022022.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List 08022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List Delivery 09022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List Finance 09022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List Finance Signed 09022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List signed 08022022.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Attendance List/Attendance List signed.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Deployment Plan/Deployment Plan 2022-02-01.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Project plan/BSC Project Plan.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Project plan/NFT Balance Score Card.mpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Scope/Project Scope signed.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Scope/Project Scope.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Systems Transition/Systems Transition Plan 2022-02-02 .docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/Training plan/Training Plan &amp; Attendance 2022-02-07.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/deployment report/Deployment Report 2022-02-01.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/statement of work/1 Project Statement of work signed.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/statement of work/1.Project Statement of work.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/validation documents/System Validation 2022-02-04.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/nft documentation/verification documents/System Verification 2022-01-28.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/samples/Ericsson Work Permit Tracker.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/samples/Group BSC 2021.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/samples/Huawei - AMP 2019.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/samples/NFT KE-HRPO Progress Report 2021.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/samples/NFT KENYA-MS Progress Report 2020 (002).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/website.rar" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JailuApp/lang/english.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1481" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JailuApp/classes/user_account.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="261" selection-start-line="261" selection-end-line="262" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JailuApp/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="542">
+              <caret line="124" column="79" selection-start-line="124" selection-start-column="79" selection-end-line="124" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JailuApp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="160" column="40" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/JailuApp/views.py" />
+        <option value="$PROJECT_DIR$/JailuApp/models.py" />
+        <option value="$PROJECT_DIR$/JailuApp/fixtures/01_initial_data.json" />
+        <option value="$PROJECT_DIR$/JailuApp/classes/global_code.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1220" />
+    <option name="height" value="520" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="nft_iso_audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nft_iso_audit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nft_iso_audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nft_iso_audit" type="462c0819:PsiDirectoryNode" />
+              <item name="JailuApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nft_iso_audit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nft_iso_audit" type="462c0819:PsiDirectoryNode" />
+              <item name="JailuApp" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="nft_iso_audit" type="Python.DjangoServer" factoryName="Django server">
+      <module name="nft_iso_audit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_jailuapp.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19a984b6-ef59-4e1c-85b7-a7b364cc0f42" name="Default Changelist" comment="" />
+      <created>1665467330825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665467330825</updated>
+      <workItem from="1665467332608" duration="2681000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2681000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.18196458" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/django_jailuapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-634">
+          <caret line="81" column="33" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="124" column="79" selection-start-line="124" selection-start-column="79" selection-end-line="124" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/classes/global_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="378" selection-start-line="378" selection-end-line="378" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/fixtures/01_initial_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="160" column="40" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/lang/english.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1481" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JailuApp/classes/user_account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="261" selection-start-line="261" selection-end-line="262" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

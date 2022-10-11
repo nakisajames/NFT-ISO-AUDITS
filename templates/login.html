@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ title }}</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="{{ title }}">
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+  <link rel="icon" href="{% static 'favicon.ico' %}">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome-free/css/all.min.css' %}" >
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{% static 'adminlte/css/adminlte.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'main.css' %}" >
+    <link rel="stylesheet" href="{% static 'plugins/sweetalert2/sweetalert2.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'plugins/pace/themes/blue/pace-theme-flash.css' %}" />
+  <script src="{% static 'plugins/pace/pace.js' %}"></script>
+    
+
+  </head>
+<body class="hold-transition login-page">
+
+<div class="login-box">
+  <div class="login-logo">
+    <a href="javascript:void(0);"><b>{{ title }}</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body" style="padding-bottom: 5px;text-align:center;">
+        <img data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Irembo HRMS"
+             src="{% static 'images/app_logo.png' %}" class="logo-src" style="background: none;height: 100px;width: auto">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      <div >
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" id="user_name" name="user_name">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" hidden>
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Remember Me
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-12">
+            <a href="javascript:void(0);" class="btn btn-primary btn-block btn-flat" onclick="SubmitLoginForm()">Sign In</a>
+          </div>
+          <!-- /.col -->
+        </div>
+      </div>
+
+
+      <p class="mb-1">
+        <a href="javascript:void(0);" onclick="ShowForgotPasswordForm()">I forgot my password</a>
+      </p>
+      <p class="mb-0" hidden>
+        <a href="#" class="text-center">Register </a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+    <div class="card-footer" id="forgot_passowrd_area" style="display: none;">
+      forgot_passowrd_area
+    </div>
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="{% static 'plugins/jquery/jquery.min.js' %}" ></script>
+<!-- Bootstrap 4 -->
+<script src="{% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %}" ></script>
+<!-- sweetalert2 -->
+<script src="{% static 'plugins/sweetalert2/sweetalert2.min.js' %}" ></script>
+<!-- AdminLTE App -->
+<script src="{% static 'adminlte/js/adminlte.min.js' %}" ></script>
+
+<script>
+   const EW = {
+       LANGUAGE_ID: "en",
+       PAGE_ID: "",
+       API_URL: "", // API file name
+       action: {
+           List: '{{ actions.List.code }}'
+           , Add: '{{ actions.Add.code }}'
+           , Edit: '{{ actions.Edit.code }}'
+           , SubmitAdd: '{{ actions.SubmitAdd.code }}'
+           , SubmitEdit: '{{ actions.SubmitEdit.code }}'
+           , Delete: '{{ actions.Delete.code }}'
+           , ExcelExport: '{{ actions.ExcelExport.code }}'
+           , PdfExport: '{{ actions.PdfExport.code }}'
+       },
+       records_per_page:{{ EW.records_per_page }}
+   }
+</script>
+<script src="{% static 'global_code.js' %}" ></script>
+
+<script>
+//start the pace library
+$(document).ajaxStart(function() { Pace.restart(); });
+
+
+    //atach enter handler
+    $("#user_name").keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            SubmitLoginForm()
+        }
+    });
+    $("#password").keypress(function(event){
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if(keycode == '13'){
+            SubmitLoginForm()
+        }
+    });
+
+</script>
+
+<script>
+function ShowForgotPasswordForm(record_id)
+  {
+        //show controls
+        $("#forgot_passowrd_area").show();
+
+        //fetch form
+        get_draw_html('#forgot_passowrd_area','security_action','show_forgot_password_form',parameters = {});
+
+  }
+
+  function CloseForgotPasswordForm()
+  {
+     $("#forgot_passowrd_area").html('forgot_passowrd_area');
+     $("#forgot_passowrd_area").hide();
+  }
+
+  function SubmitForgotPasswordRequest(element)
+  {
+        const object_id = null
+        const active_form_values = {};
+        var user_name_email = $("#user_name_email").val();
+
+        //disable button
+        var old_html = $(element).html();
+        $(element).html("<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>Working...");
+        $(element).attr("disabled","true");
+
+        //console.log(active_form_values);
+        $.ajax({
+            type: "POST",
+            cache: false,
+            url: "api",
+            dataType :"json",
+            data: { rand_time: new Date().getTime(), api_object: 'security_action'
+                , api_action: "show_forgot_password_confirm_form", object_id: object_id
+                , user_name_email: user_name_email
+                , status: $("#status").val()
+                , comment: $("#comment").val()
+            } ,
+            success: function(response){
+              //console.log(response);
+              //read data out
+
+              //enable button
+              $(element).html(old_html);
+              $(element).removeAttr("disabled");
+
+              if(response.error === false)
+              {
+                   //show success message
+                   DialogShowSuccessMessage(response.error_msg);
+                   $("#forgot_passowrd_area").html(response.html);
+                   //CloseForgotPasswordForm();
+
+              }
+              else
+              {
+                  //show error message
+                  ShowFailureMessage(response.error_msg)
+              }
+            },
+            error: function(data){
+            //enable button
+            $(element).html(old_html);
+            $(element).removeAttr("disabled");
+            console.log('failed to Load form:',data);
+            //show error message
+            ShowFailureMessage("Oops Server failed to complete this request");
+            }
+            });
+
+  }
+
+
+  function ConfirmForgotPasswordCRequest(element)
+  {
+        const object_id = null
+        const active_form_values = {};
+        var user_name_email = $("#user_name_email").val();
+        var fp_code_hash = $("#fp_code_hash").val();
+        var fp_verify_code = $("#fp_verify_code").val();
+
+        //disable button
+        var old_html = $(element).html();
+        $(element).html("<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>Working...");
+        $(element).attr("disabled","true");
+
+        //console.log(active_form_values);
+        $.ajax({
+            type: "POST",
+            cache: false,
+            url: "api",
+            dataType :"json",
+            data: { rand_time: new Date().getTime(), api_object: 'security_action'
+                , api_action: "confirm_forgot_password_reset", object_id: object_id
+                , user_name_email: user_name_email, fp_code_hash: fp_code_hash, fp_verify_code: fp_verify_code
+                , status: $("#status").val()
+                , comment: $("#comment").val()
+            } ,
+            success: function(response){
+              //console.log(response);
+              //read data out
+
+              //enable button
+              $(element).html(old_html);
+              $(element).removeAttr("disabled");
+
+              if(response.error === false)
+              {
+                   //show success message
+                   DialogShowSuccessMessage(response.error_msg);
+                   CloseForgotPasswordForm();
+
+              }
+              else
+              {
+                  //show error message
+                  ShowFailureMessage(response.error_msg)
+              }
+            },
+            error: function(data){
+            //enable button
+            $(element).html(old_html);
+            $(element).removeAttr("disabled");
+            console.log('failed to Load form:',data);
+            //show error message
+            ShowFailureMessage("Oops Server failed to complete this request");
+            }
+            });
+
+  }
+</script>
+
+</body>
+</html>
